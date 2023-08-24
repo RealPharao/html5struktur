@@ -1,13 +1,3 @@
-// let h1 = document.createElement("h1");
-// let title = document.createTextNode("Nu står der Penis...!");
-// h1.appendChild(title);
-// console.log("nu står der noget andet");
-
-// let h1 = document.querySelector("h1");
-// let text = document.createTextNode("nu står der det her");
-// h1.appendChild(text);
-// console.log("");
-
 let h1 = document.querySelector("h1");
 console.log(h1.textContent);
 
@@ -23,5 +13,20 @@ console.log(h3two.textContent);
 let footer = document.querySelector("footer");
 console.log(footer.textContent);
 
-// let h1 = document.querySelector("h1");
-// console.log(h1.textContent);
+let p1 = document.querySelector("p");
+
+let p2 = document.querySelector("article:last-child p");
+
+h1.textContent = "ny overskrift";
+
+h2.textContent = "h2 overskrift fra js";
+
+h3one.textContent = "den første h3 skiftet";
+
+p1.textContent = "djnvcjdsbnvlsj<njkdnvæ";
+
+h3two.textContent = "så blev den anden også skiftet";
+
+p2.textContent = "læknlknlknælknælknlæ";
+
+footer.textContent = "Den sidste lort";
