@@ -20,8 +20,24 @@ console.log(h3one.textContent);
 let h3two = document.querySelector("article:last-child h3");
 console.log(h3two.textContent);
 
+let p1 = document.querySelector("p");
+console.log(h3two.textContent);
+
+let p2 = document.querySelector("article:last-child p");
+console.log(h3two.textContent);
+
 let footer = document.querySelector("footer");
 console.log(footer.textContent);
 
 // let h1 = document.querySelector("h1");
 // console.log(h1.textContent);
+
+h1.textContent = "her står der noget andet";
+
+h2.textContent = "det er en h2 overskrift";
+
+h3one.textContent = "så blev den føsrte h3 udskiftet";
+
+p1.textContent = "kdsnfælkasnmcækansøæclknasøældkcnlæKDNSCØL";
+
+p2.textContent = "lkslddfvnfvælksdnvcælksndvæljksndvæljksndvljksndvæl";
