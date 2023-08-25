@@ -32,3 +32,11 @@ h3two.textContent = "så blev den anden også skiftet";
 p2.textContent = "læknlknlknælknælknlæ";
 
 footer.textContent = "Den sidste lort";
+
+const pic = document.querySelector("img");
+pic.src = "https://picsum.photos/200/300/?blur=2";
+pic.alt = "nyt billede";
+
+const pictwo = document.querySelector("article:last-child img");
+pictwo.src = "https://picsum.photos/200/300/?blur=2";
+pictwo.alt = "nyt billede i nr.2";
