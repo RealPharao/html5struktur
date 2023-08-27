@@ -40,3 +40,22 @@ pic.alt = "nyt billede";
 const pictwo = document.querySelector("article:last-child img");
 pictwo.src = "https://picsum.photos/200/300/?blur=2";
 pictwo.alt = "nyt billede i nr.2";
+
+let art = document.createElement("article");
+let picThree = document.createElement("img");
+picThree.src = "https://picsum.photos/200/300/?blur=2";
+let h3Three = document.createElement("h3");
+let topic = document.createTextNode("så kom der en nr.3");
+h3Three.appendChild(topic);
+let p3 = document.createElement("p");
+let pText = document.createTextNode(
+  "så er den også med sdkdmnvækdnvpandsæcknsæ"
+);
+p3.appendChild(pText);
+
+art.appendChild(picThree);
+art.appendChild(h3Three);
+art.appendChild(p3);
+
+const parent = document.querySelector("section");
+parent.appendChild(art);
