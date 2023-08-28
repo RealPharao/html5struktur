@@ -52,6 +52,6 @@ function showHero(heros) {
   copy.querySelector(".birthday").textContent =
     heros.birthday.day + "/" + heros.birthday.month;
   copy.querySelector("img").src = heros.image;
-  const parent = document.querySelector("body");
+  const parent = document.querySelector("main");
   parent.appendChild(copy);
 }
