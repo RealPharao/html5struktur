@@ -139,5 +139,5 @@ picReplace.addEventListener("click", udskift);
 
 function udskift() {
   console.log("gør hvad jeg siger");
-  picReplace.querySelector("img").src = "https://picsum.photos/200/300/?blur=2";
+  picReplace.src = "https://picsum.photos/200/300/?blur=1";
 }
