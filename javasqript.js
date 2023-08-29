@@ -133,3 +133,12 @@ function start() {
   const parent = document.querySelector("section");
   parent.appendChild(art);
 }
+
+const pic = document.querySelector("img");
+pic.addEventListener("click", udskift);
+pic.src = "https://picsum.photos/200/300/?blur=2";
+
+function udskift() {
+  console.log("gør hvad jeg siger");
+  pic.src = "https://picsum.photos/200/300/?blur=2";
+}
