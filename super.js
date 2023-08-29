@@ -51,13 +51,21 @@ function showHero(heros) {
   copy.querySelector(
     ".weaknesses"
   ).textContent = `Weaknesses: ${heros.weaknesses}`;
-  copy.querySelector(".active").textContent = `Active: ${heros.active}`;
+
+  if (heros.active) {
+    copy.querySelector("p.active").classList.remove("activeNone");
+    copy.querySelector(".active").textContent = `Active: ${heros.active}`;
+  }
+
+  // copy.querySelector(".active").textContent = `Active: ${heros.active}`;
+
   copy.querySelector(".isEvil").textContent = `isEvil: ${heros.isEvil}`;
   copy.querySelector(".height").textContent = `Height: ${heros.height}`;
   copy.querySelector(
     ".birthday"
   ).textContent = `Dag:${heros.birthday.day}  Måned:${heros.birthday.month}  År:${heros.birthday.year}`;
   copy.querySelector("img").src = heros.image;
+
   const parent = document.querySelector("main");
   parent.appendChild(copy);
 }

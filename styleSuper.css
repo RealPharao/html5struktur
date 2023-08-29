@@ -13,10 +13,14 @@ h2 {
   font-size: large;
 }
 img {
-  height: 200px;
+  height: 220px;
   width: 200px;
 }
 
-.active {
+.activeNone {
   display: none;
 }
+
+/* p.activeTrue .active {
+  display: block;
+} */
