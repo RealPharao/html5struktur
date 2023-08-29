@@ -134,11 +134,10 @@ function start() {
   parent.appendChild(art);
 }
 
-const pic = document.querySelector("img");
-pic.addEventListener("click", udskift);
-pic.src = "https://picsum.photos/200/300/?blur=2";
+const picReplace = document.querySelector("img");
+picReplace.addEventListener("click", udskift);
 
 function udskift() {
   console.log("gør hvad jeg siger");
-  pic.src = "https://picsum.photos/200/300/?blur=2";
+  picReplace.querySelector("img").src = "https://picsum.photos/200/300/?blur=2";
 }
