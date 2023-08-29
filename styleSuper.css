@@ -7,6 +7,7 @@ article {
   border: 2px solid black;
   width: 400px;
   margin: 0;
+  position: relative;
 }
 
 h2 {
@@ -19,4 +20,13 @@ img {
 
 .activeNone {
   display: none;
+}
+
+article.isEvilTrue::after {
+  content: "Evil";
+  padding: 1em;
+  background-color: red;
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
 }
